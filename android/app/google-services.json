@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "43323052918",
+    "project_id": "notificaciones-app-fdd05",
+    "storage_bucket": "notificaciones-app-fdd05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43323052918:android:ceeb4342fab0e052612057",
+        "android_client_info": {
+          "package_name": "com.franciscoaldado.notificaciones"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43323052918-mol3qksus65854gemuph3onhtorpl1mo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.franciscoaldado.notificaciones",
+            "certificate_hash": "912a34e22b7aea869d3e7f51ca2d4c9980f4ef66"
+          }
+        },
+        {
+          "client_id": "43323052918-jg7shi4mibl69194ao56e0vi1bfffv3q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyPTvo9HUFQoZZHSxW7Ki-r8yumlU1Wbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43323052918-jg7shi4mibl69194ao56e0vi1bfffv3q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
