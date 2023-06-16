@@ -16,19 +16,20 @@ class PushNotificationService {
   static Future _onBackgroundHandler(RemoteMessage message) async {
     // print('onBackground Handler ${message.messageId}');
     print(message.data);
-    _messageStreamController.add(message.notification?.title ?? 'No title');
+    // agregamos el evento al stream
+    _messageStreamController.add(message.data['producto'] ?? 'No data');
   }
 
   static Future _onMessageHandler(RemoteMessage message) async {
     // print('onMessage Handler ${message.messageId}');
     print(message.data);
-    _messageStreamController.add(message.notification?.title ?? 'No title');
+    _messageStreamController.add(message.data['producto'] ?? 'No data');
   }
 
   static Future _onMessageOpenAppHandler(RemoteMessage message) async {
     // print('onMessageOpenApp Handler ${message.messageId}');
     print(message.data);
-    _messageStreamController.add(message.notification?.title ?? 'No title');
+    _messageStreamController.add(message.data['producto'] ?? 'No data');
   }
 
   static Future initializeApp() async {
@@ -39,6 +40,7 @@ class PushNotificationService {
 
     // Handlers
     FirebaseMessaging.onBackgroundMessage(_onBackgroundHandler);
+    // hemos creado una suscripción al stream utilizando el método listen(), que imprimirá los eventos recibidos.
     FirebaseMessaging.onMessage.listen(_onMessageHandler);
     FirebaseMessaging.onMessageOpenedApp.listen(_onMessageOpenAppHandler);
 
